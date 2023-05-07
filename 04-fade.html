@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <style>
+        button {
+            width: 5rem;
+            height: 2rem;
+            background-color: cornsilk;
+            color: brown;
+        }
+
+        .one {
+            height: 50px;
+            width: 50px;
+            background-color: blueviolet;
+            margin: 10px;
+            /* display: none;   we have to write display: none; when we want fade-in effect */
+        }
+    </style>
+</head>
+
+<body>
+    <button>Click</button>
+    <div class="one" id="two-1">1</div>
+    <div class="one" id="two-2">2</div>
+    <div class="one" id="two-3">3</div>
+    <script>
+        $(document).ready(function () {
+            $('button').click(function () {
+                // $('#two-1').fadeIn(), $('#two-2').fadeIn("slow"), $('#two-3').fadeIn(2000);
+                $('#two-1').fadeOut("fast"), $('#two-2').fadeOut("slow"), $('#two-3').fadeOut(2000);
+                // $('#two-1').fadeTo("slow",0.2), $('#two-2').fadeTo("slow",0.4), $('#two-3').fadeTo("slow",0.7);//(fadeTo event is use for opacity..)
+                // $('#two-1').fadeToggle(), $('#two-2').fadeToggle("slow"), $('#two-3').fadeToggle(2000);
+            })
+        })
+    </script>
+</body>
+
+</html>

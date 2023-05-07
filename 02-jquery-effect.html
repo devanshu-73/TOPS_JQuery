@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <title>Document</title>
+    <style>
+        button {
+            width: 5rem;
+            height: 2rem;
+            background-color: cornsilk;
+            color: brown;
+        }
+
+        .one {
+            height: 50px;
+            width: 50px;
+            background-color: blueviolet;
+            margin: 10px;
+        }
+        p{
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <button>Click</button>
+    <div class="one" id="two-1">1</div>
+    <div class="one" id="two-2">2</div>
+    <div class="one" id="two-3">3</div>
+
+    <!-- -----------------------------------------------------------------    -->
+
+    <!-- <p>Lorem ipsum dolor sit amet.</p> -->
+    <script>
+           $(document).ready(function () {
+            $('button').click(function () {
+            //    $('.one').toggle();
+               $('#two-1').toggle(),$('#two-2').toggle("slow"),$('#two-3').toggle(2000);
+            })
+        })
+
+        // ----------------------------------------------------------------------
+        // $(document).ready(function () {
+        //     $('p').click(function () {
+        //         $(this).hide(1000);
+        //     })
+        // })
+    </script>
+</body>
+
+</html>
