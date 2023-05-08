@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <title>Document</title>
+    <style>
+       div{
+        background-color: chartreuse;
+        height: 7rem;
+        
+     }
+       #two{
+        margin-top: 1rem;
+        /* display: none; */ 
+       }
+    </style>
+</head>
+
+<body>
+    <div id="one">ONE</div>
+    <div id="two">TWO</div>
+    <script>
+        //  $(document).ready(function () {
+        //     $('#one').click(function () {
+        //         $('#two').slideDown();
+        //     })
+        // })
+        //  $(document).ready(function () {
+        //     $('#one').click(function () {
+        //         $('#two').slideUp();
+        //     })
+        // })
+         $(document).ready(function () {
+            $('#one').click(function () {
+                $('#two').slideToggle();
+            })
+        })
+    </script>
+</body>
+
+</html>

@@ -3,6 +3,25 @@
     "development"
   ],
   "hints": {
-    "sri": "off"
+    "sri": "off",
+    "compat-api/css": [
+      "default",
+      {
+        "ignore": [
+          "justify-content: space-evenly",
+          "display: grid",
+          "grid-template-columns",
+          "grid-template-columns: repeat(4,auto)",
+          "place-items",
+          "grid-template-columns: repeat(4, auto)"
+        ]
+      }
+    ],
+    "axe/forms": [
+      "default",
+      {
+        "label": "off"
+      }
+    ]
   }
 }

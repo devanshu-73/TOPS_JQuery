@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <style>
+        div {
+            width: 100px;
+            height: 100px;
+            background-color: burlywood;
+            position: absolute;
+        }
+    </style>
+</head>
+
+<body>
+    <button>Click</button>
+    <div>DEV</div>
+    <script>
+        $(document).ready(function () {
+            $('button').click(function () {
+                $('div').animate({ height: '300px' });
+                $('div').animate({ width: '300px' });
+                $('div').animate({ height: '500px' });
+                $('div').animate({ width: '500px' });
+            })
+        })
+        //   $(document).ready(function () {
+        //     $('button').click(function () {
+        //         $('div').animate({left : '30%'});
+        //         $('div').animate({top : '30%'});
+        //         $('div').animate({left : '0%'});
+        //         $('div').animate({top : '5%'});
+        //     })
+        // })
+        //   $(document).ready(function () {
+        //     $('button').click(function () {
+        //         // $('div').animate({left : '250px',height:'+=150px',width:'+=150px'});
+        //     })
+        // })
+        //   $(document).ready(function () {
+        //     $('button').click(function () {
+        //         $('div').animate({left : '20%'},'slow');
+        //         $('div').animate({fontSize : '50px'},'slow');
+        //     })
+        // })
+
+
+    </script>
+</body>
+
+</html>

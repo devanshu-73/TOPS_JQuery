@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <title>Menu</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            text-decoration: none;
+            list-style: none;
+        }
+
+        html {
+            font-size: 62.5%;
+        }
+
+        /* ------------------------CSS MEDIA QUERY------------------------------------- */
+        @media (min-width: 769px) and (max-width: 1024px) {
+            html {
+                font-size: 55%;
+            }
+        }
+
+        @media (min-width: 481px) and (max-width: 768px) {
+            html {
+                font-size: 45%;
+            }
+        }
+
+        @media (min-width: 200px) and (max-width: 480px) {
+            html {
+                font-size: 35%;
+            }
+        }
+
+        /* ----------------------------------------------------------------------------------------------------- */
+
+        section {
+            min-height: 100vh;
+        }
+
+        nav {
+            margin: auto;
+            height: 5rem;
+            /* min-width: 100vw; */
+            border: 0.1rem solid white;
+            border-radius: .6rem;
+            background-color: black;
+        }
+
+        ul {
+            display: grid;
+            height: inherit;
+            grid-template-columns: repeat(4, auto);
+            place-items: center;
+        }
+
+        ul li a {
+            /* border: .2rem solid white; */
+            border-radius: .7rem;
+            padding: .5rem;
+            font-family: fantasy;
+            font-size: 2.2em;
+            font-weight: 300;
+            letter-spacing: 1px;
+            color: white;
+        }
+        ul li:hover a {
+            background-color: white;
+            color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <nav>
+            <ul>
+                <li><a href="">HOME</a></li>
+                <li><a href="">ABOUT US</a></li>
+                <li><a href="">SERVICES</a></li>
+                <li><a href="">CONTACT</a></li>
+            </ul>
+        </nav>
+    </section>
+</body>
+
+</html>
