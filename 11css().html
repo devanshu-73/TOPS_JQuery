@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,17 +8,19 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
     <title>Document</title>
 </head>
+
 <body>
+
+    <p >Lorem ipsum,gnbgfnfnfng
+    </p>
     <button>Click</button>
-    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Error, vero!</p>
     <script>
-          $(document).ready(function () {
+        $(document).ready(function () {
             $('button').click(function () {
-                $('p').hide('slow',function () {//This type of function called CallBack
-                    alert("stop....")
-                });
-            })
+                $('p').css('background-color','red')
+            });
         })
     </script>
 </body>
+
 </html>
