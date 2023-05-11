@@ -8,21 +8,26 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
     <title>Document</title>
     <style>
-    div{
-        height: 100px;
-        width: 100px;
-        background-color: aqua;
-    }
+        div {
+            height: 300px;
+            width: 300px;
+            border: .1rem solid black;
+            /* background-color: aqua; */
+        }
     </style>
 </head>
 
 <body>
-    <div>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quasi, est.</div>
+    <div></div>
     <button>Click</button>
+    <!-- <input type="number" name="radius" id="radius"> -->
     <script>
         $(document).ready(function () {
             $('button').click(function () {
-                $('div').height(500).width(500);
+                // $('div').height(500).width(500);
+                let color = prompt('Enter Color');
+                let radius = prompt('Enter radius');
+                $('div').css({boxShadow:'5px 5px 3px black',backgroundColor:`${color}`,borderRadius:`${radius}%`},)
             });
         })
     </script>
