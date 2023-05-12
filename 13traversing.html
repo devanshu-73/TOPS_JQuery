@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <title>Document</title>
+    <style>
+        .border {
+            border: 4px solid black;
+            display: block;
+            padding: 2rem;
+        }
+    </style>
+
+</head>
+
+<body>
+    <!-- <div class="one">
+        <ul class="one">
+            <li class="one">
+                <span class="one">span</span>
+            </li>
+        </ul>
+    </div> -->
+    <div class="border one">
+        <ul class="border  one">
+                <span class="border">span</span>
+        </ul>
+        <ul class="border two">
+                <span class="border">span</span>
+        </ul>
+    </div>
+    <script>
+        //  --------------  traversing Ancestor ------------------
+        // $(document).ready(function () {
+        //     // $('span').parent().css({ "background-color": "red" })
+        //     // $('span').parents().css({ "background-color": "red" })
+        //     // $('span').parentsUntil('div').css({ "background-color": "red" })
+        // })
+        //  --------------  traversing Ancestor ------------------
+        //  --------------  traversing Descendants ------------------
+        $(document).ready(function () {
+            $('div').children('.one').css({ "background-color": "red" })
+            // $('div').find('span').css({ "background-color": "red" })
+        })
+
+        //  --------------  traversing Descendants ------------------
+    </script>
+</body>
+
+</html>

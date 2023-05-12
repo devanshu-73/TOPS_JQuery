@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <title>Document</title>
+    <style>
+        .border {
+            border: 4px solid black;
+            display: block;
+            padding: 2rem;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="border">
+       <h1 class="border">h1</h1>
+       <h2 class="border">h2</h2>
+       <h3 class="border">h1</h3>
+       <h4 class="border">h2</h4>
+       <h5 class="border">h1</h5>
+       <p class="border">PARA</p>
+       <h1 class="border">h1</h1>
+       <h4 class="border">h4</h4>
+       <h4 class="border">h4</h4>
+       <h4 class="border">h4</h4>
+       <h2 class="border">h2</h2>
+       <h5 class="border">h5</h5>
+       <h5 class="border">h5</h5>
+    </div>
+    <script>
+        $(document).ready(function () {
+            // $('p').siblings().css({ "background-color": "red" })
+            // $('p').next().css({ "background-color": "red" })
+            // $('p').nextAll().css({ "background-color": "red" })
+            // $('p').nextUntil('h2').css({ "background-color": "red" })
+            // $('p').prev().css({ "background-color": "red" })
+            $('p').prevAll().css({ "background-color": "red" })
+            // $('p').prevUntil('h2').css({ "background-color": "red" })
+        })
+
+    </script>
+</body>
+
+</html>
