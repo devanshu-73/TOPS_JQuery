@@ -13,7 +13,8 @@
           "grid-template-columns",
           "grid-template-columns: repeat(4,auto)",
           "place-items",
-          "grid-template-columns: repeat(4, auto)"
+          "grid-template-columns: repeat(4, auto)",
+          "grid-template-rows"
         ]
       }
     ],
@@ -27,6 +28,12 @@
       "default",
       {
         "list": "off"
+      }
+    ],
+    "axe/name-role-value": [
+      "default",
+      {
+        "input-button-name": "off"
       }
     ]
   }

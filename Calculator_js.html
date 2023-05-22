@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* 
+        .container {
+        } */
+
+        #screen {
+            text-align: right;
+            padding: 1.5rem;
+            font-size: 2.5rem;
+            /* border: none; */
+            outline: none;
+            border-radius: 1.5rem;
+            margin-bottom: .5rem;
+        }
+
+        .btn-box {
+            /* border: .1rem solid rgba(0, 0, 0, 0.42); */
+            display: grid;
+            grid-template-columns: auto auto auto auto;
+            grid-template-rows: 6rem 6rem 6rem 6rem 6rem;
+            gap: .5rem .5rem;
+        }
+
+        .btn {
+            border-radius: 5rem;
+            font-size: 1.8rem;
+        }
+    </style>
+</head>
+
+<div class="container">
+    <input type="text" name="" id="screen">
+    <div class="btn-box">
+        <input type="button" class="btn" value="Clr" onclick="Clear()">
+        <input type="button" class="btn" value="←" onclick="Back()">
+        <input type="button" class="btn" value="%" onclick="Solve('%')">
+        <input type="button" class="btn" value="/" onclick="Solve('/')">
+        <input type="button" class="btn" value="7" onclick="Solve('7')">
+        <input type="button" class="btn" value="8" onclick="Solve('8')">
+        <input type="button" class="btn" value="9" onclick="Solve('9')">
+        <input type="button" class="btn" value="*" onclick="Solve('*')">
+        <input type="button" class="btn" value="4" onclick="Solve('4')">
+        <input type="button" class="btn" value="5" onclick="Solve('5')">
+        <input type="button" class="btn" value="6" onclick="Solve('6')">
+        <input type="button" class="btn" value="-" onclick="Solve('-')">
+        <input type="button" class="btn" value="1" onclick="Solve('1')">
+        <input type="button" class="btn" value="2" onclick="Solve('2')">
+        <input type="button" class="btn" value="3" onclick="Solve('3')">
+        <input type="button" class="btn" value="+" onclick="Solve('+')">
+        <input type="button" class="btn" value="00" onclick="Solve('00')">
+        <input type="button" class="btn" value="0" onclick="Solve('0')">
+        <input type="button" class="btn" value="." onclick="Solve('.')">
+        <input type="button" class="btn" value="=" onclick="Result('')">
+    </div>
+</div>
+
+<script>
+    var dev = document.getElementById('screen');
+    function Solve(val) {
+        dev.value = dev.value + val;
+        console.log(dev.value);
+    }
+    function Result() {
+        var num1 = dev.value;
+        var num2 = eval(num1);
+        dev.value = num2;
+        // console.log("value",dev.value)
+    }
+    function Clear() {
+        dev.value = '';
+    }
+    function Back() {
+        dev.value = dev.value.slice(0, -1);
+    }
+</script>
+
+<body>
+
+</body>
+
+</html>
