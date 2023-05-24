@@ -9,67 +9,48 @@
     <title>Document</title>
     <style>
         body {
-            height: 500vh;
             margin: 0;
             padding: 0;
+            height: 4000px;
         }
 
-        #one {
+        div {
             width: 100%;
-            height: 200px;
+            height: 500px;
             border: 1px solid black;
-        }
-
-        #two {
-            border: 1px solid black;
-            width: 100%;
-            height: 200px;
-        }
-
-        #three {
-            width: 100%;
-            border: 1px solid black;
-            height: 200px;
-        }
-
-        #four {
-            border: 1px solid black;
-            width: 100%;
-            height: 200px;
-        }
-
-        #five {
-            border: 1px solid black;
-            width: 100%;
-            height: 200px;
+            transition: all .7s ease;
         }
     </style>
 </head>
 
 <body>
-    <div id="one"></div>
-    <div id="two"></div>
-    <div id="three"></div>
-    <div id="four"></div>
-    <div id="five"></div>
+    <div id="one">section-1</div>
+    <div id="two">section-2</div>
+    <div id="three">section-3</div>
+    <div id="four">section-4</div>
+    <div id="five">section-5</div>
     <script>
         $(document).ready(function () {
             $(window).scroll(function () {
                 var scr = $(window).scrollTop();
-                if (scr > 799) {
+                if (scr > 1900 && scr < 2400) {
                     $('#five').css({ "background-color": "red" });
+                    $('#four').css({ "background-color": "yellow" });
                 }
-                else if (scr > 599) {
+                else if (scr > 1400 && scr < 2200) {
                     $('#four').css({ "background-color": "green" });
+                    $('#three').css({ "background-color": "aqua" });
                 }
-                else if (scr > 399) {
+                else if (scr > 900 && scr < 1600) {
                     $('#three').css({ "background-color": "yellow" });
+                    $('#two').css({ "background-color": "gray" });
                 }
-                else if (scr > 199) {
+                else if (scr > 400 && scr < 1100) {
                     $('#two').css({ "background-color": "blue" });
+                    $('#one').css({ "background-color": "violet" });
                 }
-                else if (scr > 9) {
-                    $('#one').css({ "background-color": "aqua" });
+                else if (scr > 5 && scr < 500) {
+                    $('#one').css({ "background-color": "red" });
                 }
 
             })
